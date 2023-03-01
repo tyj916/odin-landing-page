@@ -3,28 +3,54 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: #1F2937;
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
 }
 
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bold;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+}
+
 .container {
-    padding: 32px 10%;
+    padding: 8% 10%;
     display: flex;
     gap: 32px;
     justify-content: center;
     align-items: center;
 }
 
+.header, .footer, .hero {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header .container {
+    padding: 16px 10% 0;
+}
+
 .header .logo {
     margin-right: auto;
+    font-size: 24px;
 }
 
 .header ul {
     list-style-type: none;
     display: flex;
     gap: 16px;
+}
+
+.header a {
+    color: #E5E7EB;
 }
 
 .footer {
@@ -48,10 +74,21 @@ a {
 }
 
 .hero .container .right {
-    height: 150px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: grey;
+}
+
+.hero .title {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.hero .text {
+    color: #E5E7EB;
 }
 
 .info .container {
@@ -61,20 +98,61 @@ a {
 .info-items {
     padding: 0 10%;
     display: flex;
-    gap: 32px;
+    gap: 48px;
+    text-align: center;
+}
+
+.info-image {
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+    height: 150px;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.quotes {
+    background-color: #E5E7EB;
 }
 
 .quotes .container {
-    padding: 32px 20%;
+    padding: 5% 20%;
     flex-direction: column;
     gap: 0;
 }
 
 .quotes .quote-author {
     align-self: flex-end;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
 }
 
 .cta .container {
-    margin: 32px 10%;
+    margin: 8% 10%;
+    padding: 5% 10%;
     justify-content: space-between;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 16px;
+}
+
+.cta-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta .text {
+    margin-bottom: 0;
+}
+
+.cta button {
+    border: 2px solid #F9FAF8;
 }
