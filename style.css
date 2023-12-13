@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .links{
+    display: flex;
+    gap: 24px;
+}
+
+.hero {
+    padding: 48px 0;
+    display: flex;
+}
+.hero .left,
+.hero .right {
+    flex: 1;
+}
+.hero .right .hero-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.sec-2 h2 {
+    margin-top: 24px;
+}
+.sec-2 .cards {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.sec-2 .cards .card-img {
+    height: 80px;
+    width: 80px;
+}
+
+.sec-3 .quote-container{
+    margin: 60px;
+}
+.sec-3 .quote-author {
+    text-align: right;
+}
+
+.sec-4 .cta-container {
+    margin: 60px 0;
+    padding: 48px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec-5 .footer {
+    margin: 24px;
+    text-align: center;
+}
