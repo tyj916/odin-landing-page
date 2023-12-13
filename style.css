@@ -2,10 +2,45 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    --theme-dark-blue: #1F2937;
+    --theme-blue: #3882F6;
+    --theme-white: #F9FAF8;
+    --theme-grey: #E5E7EB;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: var(--theme-dark-blue);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+button {
+    background-color: var(--theme-blue);
+    color: var(--theme-white);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+}
+
+.bg-dark-blue {
+    background-color: var(--theme-dark-blue);
+    color: var(--theme-white);
+}
+
+.bg-theme-grey {
+    background-color: var(--theme-grey);
 }
 
 .section {
@@ -19,7 +54,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.header .links{
+.header .logo {
+    font-size: 24px;
+}
+.header .links {
+    color: var(--theme-grey);
     display: flex;
     gap: 24px;
 }
@@ -32,9 +71,14 @@ body {
 .hero .right {
     flex: 1;
 }
+.hero .left p {
+    color: var(--theme-grey);
+}
 .hero .right .hero-img {
     width: 100%;
     height: 100%;
+    background-color: var(--theme-grey);
+    color: var(--theme-dark-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,23 +100,33 @@ body {
     gap: 24px;
 }
 .sec-2 .cards .card-img {
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
+    border: solid var(--theme-blue) 3px;
+    border-radius: 8px;
 }
 
 .sec-3 .quote-container{
-    margin: 60px;
+    padding: 60px;
+    font-size: 36px;
 }
 .sec-3 .quote-author {
     text-align: right;
+    font-weight: 900;
 }
 
 .sec-4 .cta-container {
+    background-color: var(--theme-blue);
+    color: var(--theme-white);
+    border-radius: 8px;
     margin: 60px 0;
     padding: 48px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.sec-4 .cta-container button {
+    border: solid var(--theme-white) 2px;
 }
 
 .sec-5 .footer {
